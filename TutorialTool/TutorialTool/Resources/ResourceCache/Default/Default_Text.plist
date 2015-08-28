@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>Text</string>
+	<key>ObjectType</key>
+	<string>Text</string>
+	<key>PosX</key>
+	<integer>240</integer>
+	<key>PosY</key>
+	<integer>160</integer>
+	<key>Rotation</key>
+	<real>0</real>
+	<key>ScaleX</key>
+	<integer>1</integer>
+	<key>ScaleY</key>
+	<integer>1</integer>
+	<key>Visible</key>
+	<string>YES</string>
+	<key>AnchorPointX</key>
+	<real>0.5</real>
+	<key>AnchorPointY</key>
+	<real>0.5</real>
+	<key>z_index</key>
+	<real>0</real>
+	<key>Opacity</key>
+	<integer>255</integer>
+	<key>Color_R</key>
+	<integer>255</integer>
+	<key>Color_G</key>
+	<integer>255</integer>
+	<key>Color_B</key>
+	<integer>255</integer>
+	<key>TextContent</key>
+	<string>Sample Text</string>
+	<key>FontName</key>
+	<string>Marker Felt</string>
+	<key>FontSize</key>
+	<integer>13</integer>
+	<key>Width</key>
+	<real>0</real>
+	<key>Height</key>
+	<real>0</real>
+</dict>
+</plist>

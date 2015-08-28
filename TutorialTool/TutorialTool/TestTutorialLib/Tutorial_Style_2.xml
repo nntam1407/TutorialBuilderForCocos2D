@@ -1,0 +1,54 @@
+<TutorialData>
+    
+    <ListStandardObjects>
+        <Object Name="ParticleTest" ObjectType="Particle" ParticleName="" CustomParticleFileName="TestTutorialLib/FruitWarTutorial/blade_sparkle.plist" PosX="240.0" PosY="160.0" AnchorPointX="0.5" AnchorPointY="0.5" Rotation="0.0" Visible="NO" z_index="9999" />
+        <Object Name="FingerTapSprite" ObjectType="Button" NormalFileName="TestTutorialLib/Popup/FingerTap0.png" ActiveFileName="TestTutorialLib/Popup/FingerTap0.png" PosX="0.0" PosY="0.0" AnchorPointX="0.0" AnchorPointY="0.0" ScaleX="0.1" ScaleY="0.1" Rotation="0.0" Visible="YES" z_index="10" />
+        <Object Name="TextGuide" ObjectType="Text" PosX="150.0" PosY="69.5" AnchorPointX="0.5" AnchorPointY="0.5" Width="220.0" Height="200.0" Rotation="0.0" Visible="YES" FontName="Marker Felt" FontSize="15.0" z_index="3" TextContent="Tap on the Construction Ground to select a Tower to build it. Then tap on the tower to upgrade or sell it" />
+    </ListStandardObjects>
+
+    <Resources>
+        <TexturePlist>
+            <Texture>TestTutorialLib/FruitWarTutorial/touch_default.plist</Texture>
+        </TexturePlist>
+    </Resources>
+
+    <Storyboard>
+        <Story>
+            <Objects>
+                <Object Name="ParticleTest1" abstractFromObject="ParticleTest" PosX="35.0" PosY="80.0" AnchorPointX="0.0" AnchorPointY="0.0" Rotation="0.0" Visible="YES" z_index="9999" />
+                
+                <Object Name="FingerTapSprite" abstractFromObject="FingerTapSprite" PosX="40.0" PosY="60.0" AnchorPointX="0.0" AnchorPointY="0.0" ScaleX="0.1" ScaleY="0.1" Rotation="0.0" Visible="YES" z_index="10" />
+                
+                <Object Name="TextGuide" abstractFromObject="TextGuide" PosX="150.0" PosY="69.5" AnchorPointX="0.5" AnchorPointY="0.5" Width="220.0" Height="200.0" Rotation="0.0" Visible="YES" FontName="Marker Felt" FontSize="15.0" z_index="3" TextContent="Tap on the Construction Ground to select a Tower to build it. Then tap on the tower to upgrade or sell it" />
+            </Objects>
+            
+            <Actions>
+                <Action Name="TestSequenceMoving" Object="FingerTapSprite" ActionType="MovingSequence" ScheduleAfterTime="0.5" Repeat="-1">
+                    <ActionSequence>
+                        <!--<ActionSequenceItem ActionType="LinearMoving" Duration="0.75" Destination_X="200.0" Destination_Y="200.0"/>
+                        <ActionSequenceItem ActionType="ZiczacMoving" Duration="3.0" Destination_X="0.0" Destination_Y="0.0" EndAmplitude="50.0" StartAmplitude="50.0" Loop="3"/>-->
+                        <ActionSequenceItem ActionType="ElipMoving" Duration="10.0" Destination_X="200.0" Destination_Y="50.0" Amplitude="100.0" Clockwise="YES"/>
+                        <ActionSequenceItem ActionType="ElipMoving" Duration="5.0" Destination_X="200.0" Destination_Y="50.0" Amplitude="100.0" Clockwise="NO"/>
+
+                    </ActionSequence>
+                </Action>
+                
+                
+                <Action Name="TestSequenceMoving" Object="ParticleTest1" ActionType="MovingSequence" ScheduleAfterTime="0.5" Repeat="-1">
+                    <ActionSequence>
+                        <ActionSequenceItem ActionType="ElipMoving" Duration="10.0" Destination_X="200.0" Destination_Y="50.0" Amplitude="100.0" Clockwise="YES"/>
+                        <ActionSequenceItem ActionType="ElipMoving" Duration="5.0" Destination_X="200.0" Destination_Y="50.0" Amplitude="100.0" Clockwise="NO"/>
+                    </ActionSequence>
+                </Action>
+                
+                <Action Name="ScaleText" Object="TextGuide" ActionType="Sequence" ScheduleAfterTime="1.0" Repeat="-1">
+                    <ActionSequence>
+                        <ActionSequenceItem ActionType="ScaleTo" ScaleX="1.025" ScaleY="1.025" Duration="0.75"/>
+                        <ActionSequenceItem ActionType="ScaleTo" ScaleX="0.975" ScaleY="0.975" Duration="0.75"/>
+                    </ActionSequence>
+                </Action>
+            </Actions>
+        </Story>
+    </Storyboard>
+    
+</TutorialData>

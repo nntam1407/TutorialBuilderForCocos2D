@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>Sprite</string>
+	<key>ObjectType</key>
+	<string>Sprite</string>
+	<key>FileName</key>
+	<string>Default/missing-texture.png</string>
+	<key>FrameName</key>
+	<string></string>
+	<key>IsUseSpriteFrame</key>
+	<integer>0</integer>
+	<key>PosX</key>
+	<string>240</string>
+	<key>PosY</key>
+	<string>160</string>
+	<key>Rotation</key>
+	<string>0</string>
+	<key>ScaleX</key>
+	<string>1</string>
+	<key>ScaleY</key>
+	<string>1</string>
+	<key>Visible</key>
+	<string>YES</string>
+	<key>AnchorPointX</key>
+	<string>0.5</string>
+	<key>AnchorPointY</key>
+	<string>0.5</string>
+	<key>z_index</key>
+	<string>0</string>
+	<key>Opacity</key>
+	<string>255</string>
+	<key>Color_R</key>
+	<string>255</string>
+	<key>Color_G</key>
+	<string>255</string>
+	<key>Color_B</key>
+	<string>255</string>
+	<key>TextContent</key>
+	<string>Sample Text</string>
+	<key>FontName</key>
+	<string>Marker Felt</string>
+	<key>FontSize</key>
+	<integer>13</integer>
+	<key>Width</key>
+	<real>0</real>
+	<key>Height</key>
+	<real>0</real>
+</dict>
+</plist>

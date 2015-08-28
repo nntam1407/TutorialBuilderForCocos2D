@@ -1,0 +1,9 @@
+1. Fixed: Bug when change action sequence type from ActionCocos2d to ActionMoving, action type is null.
+2. Fixed: When user changes an object's properties while editing its name, the program will have unusual behavior (even crashes)
+3. Fixed: When create a new object while rotate, sometimes the object will return back to the original state.
+4. Fixed: If the sprite is too wide or too high, when rotating its frame could cover the green dot used for rotating, making the rotate click event unusable.
+5. If the user deletes a storyboard with actions in it, the next time the user creates a new storyboard, it will have the deleted storyboard's actions.
+6. Fixed: Particle sometimes crashes when user redraws tutorial scene using function from NSWindow (due to different thread call) (Fixed by changing cocos2d's config CC_DIRECTOR_MAC_THREAD into CC_MAC_USE_MAIN_THREAD, the default config was CC_MAC_USE_DISPLAY_LINK_THREAD)
+7. Fixed : While config an action sequence, if user creates a new action sequence and chooses a different action sequence type, then the app will crash.
+8. Fixed: While create many actions in a sequence, the animation will lose all its animation frames. 
+9. Bug when create new storyboard anymore
